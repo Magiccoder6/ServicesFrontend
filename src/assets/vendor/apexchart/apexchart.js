@@ -30189,7 +30189,7 @@
               reject(e); // handle error in case no data or element not found
             });
           } else {
-            reject(new Error('Element not found'));
+            //reject(new Error('Element not found'));
           }
         });
       }

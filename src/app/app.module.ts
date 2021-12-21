@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, routes } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
@@ -15,6 +15,9 @@ import { LoadingComponent } from './_helpers/loading/loading.component';
 import { LoaderService } from './_services/loader/loader.service';
 import { TraficInterceptor } from './_helpers/interceptor/trafic.interceptor';
 import { NgxSpinnerModule } from 'ngx-spinner';
+import { HeaderComponent } from './header/header.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,9 @@ import { NgxSpinnerModule } from 'ngx-spinner';
     LoginComponent,
     RegisterComponent,
     ForgetPasswordComponent,
-    LoadingComponent
+    LoadingComponent,
+    HeaderComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -33,6 +38,7 @@ import { NgxSpinnerModule } from 'ngx-spinner';
     BrowserAnimationsModule,
     ToastrModule.forRoot(),
     NgxSpinnerModule,
+    RouterModule.forRoot(routes)
     
   ],
   providers: [

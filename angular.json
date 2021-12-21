@@ -35,7 +35,14 @@
             "scripts": [
               "src/assets/vendor/global/global.min.js",
               "src/assets/js/custom.min.js",
-              "src/assets/js/dlabnav-init.js"
+              "src/assets/js/dlabnav-init.js",
+              "src/assets/vendor/chart.js/Chart.bundle.min.js",
+              "src/assets/vendor/jquery-nice-select/js/jquery.nice-select.min.js",
+              "src/assets/vendor/nouislider/nouislider.min.js",
+              "src/assets/vendor/wnumb/wNumb.js",
+              "src/assets/js/dashboard/my-wallet.js",
+              "src/assets/vendor/apexchart/apexchart.js",
+              "src/assets/vendor/jquery-nice-select/js/jquery.nice-select.min.js"
             ]
           },
           "configurations": {
@@ -109,7 +116,14 @@
             "scripts": [
               "src/assets/vendor/global/global.min.js",
               "src/assets/js/custom.min.js",
-              "src/assets/js/dlabnav-init.js"
+              "src/assets/js/dlabnav-init.js",
+              "src/assets/vendor/chart.js/Chart.bundle.min.js",
+              "src/assets/vendor/jquery-nice-select/js/jquery.nice-select.min.js",
+              "src/assets/vendor/nouislider/nouislider.min.js",
+              "src/assets/vendor/wnumb/wNumb.js",
+              "src/assets/js/dashboard/my-wallet.js",
+              "src/assets/vendor/apexchart/apexchart.js",
+              "src/assets/vendor/jquery-nice-select/js/jquery.nice-select.min.js"
             ]
           }
         }

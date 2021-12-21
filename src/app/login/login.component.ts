@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { HttpService } from '../_services/http/http.service';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ToastrService } from 'ngx-toastr';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-login',
@@ -10,7 +12,11 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private _http:HttpService,private toastr:ToastrService) { }
+  constructor(private _http:HttpService,private toastr:ToastrService,private router:Router) {
+    if(this._http.user!=null){
+      this.router.navigate(['dashboard'])
+    }
+  }
 
   EmailError:string=''
   PasswordError:string=''
@@ -30,7 +36,10 @@ export class LoginComponent implements OnInit {
   login(){
     if(this.myForm.valid){
       this._http.login(this.myForm.value.email,this.myForm.value.password).subscribe((data:any)=>{
-        console.log(data)
+       
+        console.log(JSON.parse(data))
+        this._http.storeUser(JSON.parse(data)[0])
+        location.href="/dashboard"
       },(error:any)=>{
         
         this.toastr.error(error.detail)
