@@ -29,7 +29,8 @@
             "styles": [
               "src/styles.css",
               "src/perfect-scrollbar.css",
-              "node_modules/@fortawesome/fontawesome-free/css/all.css"
+              "node_modules/@fortawesome/fontawesome-free/css/all.css",
+              "node_modules/ngx-toastr/toastr.css"
             ],
             "scripts": [
               "src/assets/vendor/global/global.min.js",
@@ -102,7 +103,8 @@
             "styles": [
               "src/styles.css",
               "src/perfect-scrollbar.css",
-              "node_modules/@fortawesome/fontawesome-free/css/all.css"
+              "node_modules/@fortawesome/fontawesome-free/css/all.css",
+              "node_modules/ngx-toastr/toastr.css"
             ],
             "scripts": [
               "src/assets/vendor/global/global.min.js",

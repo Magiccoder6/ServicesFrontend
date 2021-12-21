@@ -14,46 +14,37 @@
                                     <a href="index.html"><img src="assets/images/logo-full.png" alt=""></a>
                                 </div>
                                 <h4 class="text-center mb-4">Sign up your account</h4>
-                                <form action="index.html">
+                                <form *ngIf="myForm != null" [formGroup]="myForm">
                                     <div class="mb-3">
                                         <label class="mb-1"><strong>Username</strong></label>
-                                        <input type="text" class="form-control" placeholder="username">
+                                        <input formControlName="username" type="text" class="form-control" placeholder="username">
+                                        <small class="text-danger" *ngIf="username">s</small>
                                     </div>
                                     <div class="mb-3">
                                         <label class="mb-1"><strong>Full Name</strong></label>
-                                        <input type="text" class="form-control" placeholder="Full Name">
+                                        <input formControlName="fullname" type="text" class="form-control" placeholder="Full Name">
+                                        <small class="text-danger" *ngIf="fullname"></small>
                                     </div>
-                                    <div class="mb-3">
-                                        <label class="mb-1"><strong>Address</strong></label>
-                                        <input type="text" class="form-control" placeholder="Address">
-                                    </div>
+                                    
                                     <div class="mb-3">
                                         <label class="mb-1"><strong>Phone Number</strong></label>
-                                        <input type="text" class="form-control" placeholder="Phone Number">
+                                        <input formControlName="phone" type="text" class="form-control" placeholder="Phone Number">
+                                        <small class="text-danger" *ngIf="phone"></small>
                                     </div>
                                     <div class="mb-3">
                                         <label class="mb-1"><strong>Email</strong></label>
-                                        <input type="email" class="form-control" placeholder="hello@example.com">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label class="mb-1"><strong>ID Number</strong></label>
-                                        <input type="text" class="form-control" placeholder="ID Number">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label class="mb-1"><strong>SSN/TRN</strong></label>
-                                        <input type="text" class="form-control" placeholder="SSN/TRN">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label class="mb-1"><strong>Country</strong></label>
-                                        <input type="text" class="form-control" placeholder="Country">
+                                        <input formControlName="email" type="email" class="form-control" placeholder="hello@example.com">
+                                        <small class="text-danger" *ngIf="email"></small>
                                     </div>
                                     <div class="mb-3">
                                         <label class="mb-1"><strong>Password</strong></label>
-                                        <input type="password" class="form-control" >
+                                        <input formControlName="password" type="password" class="form-control" >
+                                        <small class="text-danger" *ngIf="password"></small>
                                     </div>
                                     <div class="mb-3">
                                         <label class="mb-1"><strong>Confirm Password</strong></label>
-                                        <input type="password" class="form-control" >
+                                        <input formControlName="password1" type="password" class="form-control" >
+                                        <small class="text-danger" *ngIf="password1"></small>
                                     </div>
                                     <div class="text-center mt-4">
                                         <button type="submit" class="btn btn-primary btn-block">Sign me up</button>
