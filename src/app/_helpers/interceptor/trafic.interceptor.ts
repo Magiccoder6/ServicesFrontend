@@ -27,7 +27,7 @@ export class TraficInterceptor implements HttpInterceptor {
         // auto logout if 401 response returned from api
         this.httpService.logout();
         this.router.navigate(['login'])
-        this.toastr.error("Session Expired please login!!")
+        //this.toastr.error("Session Expired please login!!")
         
       }
 

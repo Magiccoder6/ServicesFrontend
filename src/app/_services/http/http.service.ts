@@ -43,6 +43,7 @@ export class HttpService
     // remove user from local storage to log user out
     localStorage.removeItem('currentUser');
     this.user=null;
+    this.router.navigate(['login'])
   }
 
   ReadDataFromStorage() {
