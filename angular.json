@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "money-transfer-frontend": {
+    "project-services": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/money-transfer-frontend",
+            "outputPath": "dist/project-services",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -82,10 +82,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "money-transfer-frontend:build:production"
+              "browserTarget": "project-services:build:production"
             },
             "development": {
-              "browserTarget": "money-transfer-frontend:build:development"
+              "browserTarget": "project-services:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -93,7 +93,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "money-transfer-frontend:build"
+            "browserTarget": "project-services:build"
           }
         },
         "test": {
@@ -130,5 +130,5 @@
       }
     }
   },
-  "defaultProject": "money-transfer-frontend"
+  "defaultProject": "project-services"
 }
