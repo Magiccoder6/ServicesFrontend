@@ -30,7 +30,8 @@
               "src/styles.css",
               "src/perfect-scrollbar.css",
               "node_modules/@fortawesome/fontawesome-free/css/all.css",
-              "node_modules/ngx-toastr/toastr.css"
+              "node_modules/ngx-toastr/toastr.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": [
               "src/assets/vendor/global/global.min.js",
@@ -43,6 +44,8 @@
               "src/assets/js/dashboard/my-wallet.js",
               "src/assets/vendor/apexchart/apexchart.js",
               "src/assets/vendor/jquery-nice-select/js/jquery.nice-select.min.js"
+             
+             
             ]
           },
           "configurations": {
@@ -111,7 +114,8 @@
               "src/styles.css",
               "src/perfect-scrollbar.css",
               "node_modules/@fortawesome/fontawesome-free/css/all.css",
-              "node_modules/ngx-toastr/toastr.css"
+              "node_modules/ngx-toastr/toastr.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": [
               "src/assets/vendor/global/global.min.js",
@@ -124,6 +128,7 @@
               "src/assets/js/dashboard/my-wallet.js",
               "src/assets/vendor/apexchart/apexchart.js",
               "src/assets/vendor/jquery-nice-select/js/jquery.nice-select.min.js"
+            
             ]
           }
         }

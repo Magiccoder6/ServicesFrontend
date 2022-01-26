@@ -18,6 +18,8 @@ import { NgxSpinnerModule } from 'ngx-spinner';
 import { HeaderComponent } from './header/header.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { RouterModule } from '@angular/router';
+import { LandingComponent } from './landing/landing.component';
+import { NavComponent } from './nav/nav.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { RouterModule } from '@angular/router';
     ForgetPasswordComponent,
     LoadingComponent,
     HeaderComponent,
-    DashboardComponent
+    DashboardComponent,
+    LandingComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,

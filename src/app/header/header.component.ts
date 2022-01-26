@@ -13,4 +13,8 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  get getYear():string{
+    return (new Date()).getFullYear().toString()
+  }
+
 }
